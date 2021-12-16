@@ -1,0 +1,19 @@
+{
+  "toDoList": [
+    {
+      "id": 1,
+      "label": "Lorem ipsum dolor sit amet. Consectetur",
+      "completed": true
+    },
+    {
+      "id": 2,
+      "label": "Lorem ipsum dolor sit amet. Consectetur Adipiscing Eit, Quam",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "label": "Lorem ipsum dolor sit amet. ",
+      "completed": false
+    }
+  ]
+}

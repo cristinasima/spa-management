@@ -1,0 +1,20 @@
+<div class="to-list-header">
+  <!--TODO add translations-->
+  Overview
+</div>
+<div class="to-do-list-content">
+  <div class="list">
+    <div class="list-item" *ngFor="let item of toDoList; let i = index"
+         [ngClass]="{'item-completed': item.completed}">
+      <input type="radio" [checked]="item.completed">
+      <span class="label">{{item.label}}</span>
+      <div class="delete-ico" (click)="deleteItem(i)"></div>
+      <div class="line" *ngIf="item.completed"></div>
+    </div>
+  </div>
+  <div class="input-block" [formGroup]="formGroup">
+    <div class="add-ico"></div>
+    <input type="text" formControlName="label">
+    <div class="send-ico" (click)="addItem(formGroup?.get('label')?.value)"></div>
+  </div>
+</div>
